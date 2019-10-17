@@ -8,11 +8,16 @@ import Products from './components/Products';
 import ShoppingCart from './components/ShoppingCart';
 
 function App() {
+
+	//states of the APP |
+	                //  V
 	const [products] = useState(data);
 	const [cart, setCart] = useState([]);
 
 	const addItem = item => {
 		// add the given item to the cart
+
+		setCart(item);
 	};
 
 	return (
